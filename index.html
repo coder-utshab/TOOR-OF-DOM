@@ -60,15 +60,36 @@
         for (const li of liCollection){
             console.log(li.innerText);
         }
+        
 
+        //OPTION-1 getElementsByTagName
         const allHeadings = document.getElementsByTagName('h1');
         for (const h1 of allHeadings) {
             //console.log(h2.innerText);
         }
 
+
+        //OPTION -2: getElementsById
         const fruitsTitle = document.getElementById('fruits-title');
         fruitsTitle.innerText = 'Fruits changed by JS';
-        
+
+
+         //OPTION-3:getElementsByClas
+        const places = document.getElementsByClassName('important-places');
+        for(const place of places){
+            console.log(place.innerText)
+        }
+
+
+        //OPTION-4: querySelectoe
+
+
+        //OPTION-5 : querySelectorAL1
+        const someLi = document.querySelectorAll('.fruits-container li');
+        //console.log(someli);
+        for(const li of someLi);
+        console.log(li.innerText);
+
     </script>
     
     </script>

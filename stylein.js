@@ -8,4 +8,4 @@ for(const section of sections){
 } 
 
 const placescontainer = document.getElementById('places-container');
-placescontainer.style.backgroundColor = 'yellow';
+placescontainer.style.backgroundColor = 'blue';

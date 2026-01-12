@@ -1,3 +1,7 @@
+//24-7 NodeList, htmlcollection,
+// parentNode, childnodes, createElement
+
+
 const sections = document.querySelectorAll('section');
 for(const section of sections){
     section.style.border = '2px solid steelblue';

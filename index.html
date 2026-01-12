@@ -25,10 +25,10 @@
          to our body
         </p>
     </header>
-    <main>
+    <main id="main-container">
         <section>
         <h1>My Awesome Dom de baba</h1>
-        <ul>
+        <ul id="places-list"></ul>
             <li>Jalali set</li>
             <li>Shafayet</li>
             <li>Bonobash</li>
@@ -44,6 +44,12 @@
             </ul>  
         </section>
         <section id="places-container">
+          <li>
+        ...
+          </li>
+        </section>
+
+        <section id="places-container-2">
             <h1 id="places-title">Places I like to visit</h1>
             <ul>
                 <li class="important-places">Shundorbon</li>
@@ -54,8 +60,9 @@
         </section>
     </main>
     <script src="js/dom.js"></script>
-    <script src="stylein.js"></script>
     <script src="append.js"></script>
+    <script src="stylein.js"></script>
+    
     <script>
         const liCollection = document.getElementsByTagName('li');
         //console.log(liCollection);
@@ -87,12 +94,18 @@
 
 
         //OPTION-5 : querySelectorAL1
-        const someLi = document.querySelectorAll('.fruits-container li');
+        // const someLi = document.querySelectorAll('.fruits-container li');
+        const someLi = document.querySelectorAll('#fruits-title + ul li');
+
         //console.log(someli);
-        for(const li of someLi);
+        // for(const li of someLi);
         // console.log(li.innerText);
+        for (const li of someLi) {
+    console.log(li.innerText);
+}
+
 
     </script>
-    </script>
+    <!-- </script> -->
 </body>
 </html>
